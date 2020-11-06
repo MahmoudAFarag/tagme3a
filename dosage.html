@@ -9,8 +9,17 @@
     <title>Dosage 2</title>
   </head>
   <body>
+    <a href="./index.html" class="back-home__link">
+      <svg class="back-home__arrow">
+        <use xlink:href="img/sprite.svg#icon-arrow-left2" />
+      </svg>
+      Back to Home
+    </a>
+
     <div class="container">
       <section class="weeks">
+        <!-- ******** WEEK 1 ******** -->
+
         <div class="week">
           <h1 class="week__num">Week 1</h1>
 
@@ -18,31 +27,38 @@
             <svg class="week__material-icon">
               <use xlink:href="img/sprite.svg#icon-display" />
             </svg>
-            <a href="https://www.youtube.com/watch?v=IWE8FzmNmMs" class="week__material-link" target="_blank">Lecture 1</a>
+            <a href="https://www.youtube.com/watch?v=IWE8FzmNmMs" target="_blank" class="week__material-link">Lecture 1</a>
           </div>
 
           <div class="week__material">
             <svg class="week__material-icon">
               <use xlink:href="img/sprite.svg#icon-file-pdf" />
             </svg>
-            <a href="pdfs/phyto1.pdf" class="week__material-link" target="_blank">Lecture PDF</a>
+            <a href="https://drive.google.com/file/d/1W6EXtGeMZc9mIrOksmdLFu4-BpSc3FPj/view?usp=sharing" target="_blank" class="week__material-link"
+              >Lecture PDF</a
+            >
           </div>
 
           <div class="week__material">
             <svg class="week__material-icon">
               <use xlink:href="./img/sprite.svg#icon-lab" />
             </svg>
-            <a href="#" class="week__material-link">Section 1</a>
+            <select class="week__material-sectionDropDown">
+              <option value="choose" class="week__material-sectionDropDown--opt">Section 1</option>
+              <option value="https://www.youtube.com/watch?v=q2GQK7DIEe4" class="week__material-sectionDropDown--opt">Part 1</option>
+              <option value="https://www.youtube.com/watch?v=fX_0p_9-FNE" class="week__material-sectionDropDown--opt">Part 2</option>
+            </select>
           </div>
 
           <div class="week__material">
             <svg class="week__material-icon">
               <use xlink:href="img/sprite.svg#icon-table2" />
             </svg>
-            <a href="#" class="week__material-link">timetable</a>
+            <a href="./img/dosage-table.pdf" target="_blank" class="week__material-link">timetable</a>
           </div>
         </div>
 
+        <!-- ******** WEEK 2 ******** -->
         <div class="week">
           <h1 class="week__num">Week 2</h1>
 
@@ -50,30 +66,34 @@
             <svg class="week__material-icon">
               <use xlink:href="./img/sprite.svg#icon-display" />
             </svg>
-            <a href="#" class="week__material-link">Lecture 2</a>
+            <a href="https://www.youtube.com/watch?v=p_25Ezi8e9E&feature=youtu.be" target="_blank" class="week__material-link">Lecture 2</a>
           </div>
 
           <div class="week__material">
             <svg class="week__material-icon">
               <use xlink:href="img/sprite.svg#icon-file-pdf" />
             </svg>
-            <a href="#" class="week__material-link">Lecture PDF</a>
+            <a href="https://drive.google.com/file/d/1KHHcqwGlYACadLtK3qf194FZOReFSMtk/view?usp=sharing" target="_blank" class="week__material-link"
+              >Lecture PDF</a
+            >
           </div>
 
           <div class="week__material">
             <svg class="week__material-icon">
               <use xlink:href="img/sprite.svg#icon-lab" />
             </svg>
-            <a href="#" class="week__material-link">Section 2</a>
+            <p class="disabled">Practical</p>
           </div>
 
           <div class="week__material">
             <svg class="week__material-icon">
               <use xlink:href="img/sprite.svg#icon-table2" />
             </svg>
-            <a href="#" class="week__material-link">timetable</a>
+            <a href="./img/dosage-table.pdf" class="week__material-link">timetable</a>
           </div>
         </div>
+
+        <!-- ******** WEEK 3 ******** -->
         <div class="week">
           <h1 class="week__num">Week 3</h1>
 
@@ -81,30 +101,34 @@
             <svg class="week__material-icon">
               <use xlink:href="img/sprite.svg#icon-display" />
             </svg>
-            <a href="#" class="week__material-link">Lecture 3</a>
+            <a href="https://www.youtube.com/watch?v=u6PYLCjB6tY&feature=youtu.be" target="_blank" class="week__material-link">Lecture 3</a>
           </div>
 
           <div class="week__material">
             <svg class="week__material-icon">
               <use xlink:href="img/sprite.svg#icon-file-pdf" />
             </svg>
-            <a href="#" class="week__material-link">Lecture PDF</a>
+            <a href="https://drive.google.com/file/d/1-1o0BE2RiNhOvp_JT4iJRCxgv0q1ASky/view?usp=sharing" target="_blank" class="week__material-link"
+              >Lecture PDF</a
+            >
           </div>
 
           <div class="week__material">
             <svg class="week__material-icon">
               <use xlink:href="img/sprite.svg#icon-lab" />
             </svg>
-            <a href="#" class="week__material-link">Section 3</a>
+            <p class="disabled">Assignment</p>
           </div>
 
           <div class="week__material">
             <svg class="week__material-icon">
               <use xlink:href="img/sprite.svg#icon-table2" />
             </svg>
-            <a href="#" class="week__material-link">timetable</a>
+            <a href="./img/dosage-table.pdf" target="_blank" class="week__material-link">timetable</a>
           </div>
         </div>
+
+        <!-- ******** WEEK 4 ******** -->
         <div class="week">
           <h1 class="week__num">Week 4</h1>
 
@@ -203,5 +227,6 @@
     <!-- <footer class="footer footer__individual">
       <p class="copyright">&copy; All Rights Reserved - Tagme3a 2020</p>
     </footer> -->
+    <script src="./js/index.js"></script>
   </body>
 </html>
