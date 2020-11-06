@@ -1,5 +1,8 @@
-const selection1 = document.querySelector(".week__material-sectionDropDown");
-selection1.addEventListener("change", ({ target: { value } }) => {
-  if (value === "choose") return false;
-  location = value;
+const selections = document.querySelectorAll(".week__material-sectionDropDown");
+
+selections.forEach((selection) => {
+  selection.addEventListener("change", ({ target: { value } }) => {
+    if (value === "choose") return false;
+    location = value;
+  });
 });
