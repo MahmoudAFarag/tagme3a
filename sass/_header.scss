@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 5rem;
+  grid-column: full-start / full-end;
+
+  &__main {
+    font-family: "Aref Ruqaa", serif;
+    font-size: 17rem;
+    color: #c3083f;
+
+    @media screen and (max-width: 600px) {
+      font-size: 11rem;
+    }
+  }
+
+  &__sub {
+    font-family: "Tajawal", sans-serif;
+    font-weight: 400;
+    font-size: 2rem;
+    color: white;
+
+    @media screen and (max-width: 600px) {
+      font-size: 1.5rem;
+    }
+  }
+}

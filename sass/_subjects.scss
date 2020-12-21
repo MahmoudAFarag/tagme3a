@@ -1,0 +1,109 @@
+@mixin link {
+  color: white;
+  margin: 1rem 1.5rem;
+  font-size: 1.2rem;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+}
+
+.back-home {
+  &__link:link,
+  &__link:visited {
+    position: absolute;
+    top: 2rem;
+    margin-left: 2rem;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__arrow {
+    fill: #fff;
+    height: 2rem;
+    width: 2rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.weeks {
+  margin: 7rem;
+
+  grid-column: center-start / center-end;
+  grid-row: 1 / span 1;
+
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 7rem;
+}
+
+.week {
+  background-color: #c3083f;
+  box-shadow: 3px 5px 9px -8px rgba(247, 247, 247, 0.43);
+
+  padding: 2rem;
+
+  display: flex;
+  flex-direction: column;
+
+  position: relative;
+
+  &__num {
+    color: white;
+    font-family: "Concert One", cursive;
+    margin-bottom: 2rem;
+    letter-spacing: 0.2rem;
+    font-size: 3rem;
+    align-self: center;
+  }
+
+  &__material {
+    margin: 2rem;
+
+    display: flex;
+    align-items: center;
+    &-icon {
+      height: 2rem;
+      width: 2rem;
+    }
+
+    &-link:link,
+    &-link:visited {
+      @include link;
+      text-decoration: none;
+    }
+
+    &-sectionDropDown {
+      width: 100%;
+      -moz-appearance: menulist;
+      appearance: menulist;
+      -webkit-appearance: menulist;
+      background-color: transparent;
+      color: white;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-family: "Montserrat", sans-serif;
+      border: none;
+      margin: 1rem 0.5rem;
+
+      &--opt {
+        background-color: #1a1a1c;
+      }
+    }
+  }
+}
+
+.disabled {
+  @include link;
+  text-decoration: line-through;
+}
